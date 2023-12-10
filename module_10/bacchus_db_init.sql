@@ -13,7 +13,7 @@ DROP USER IF EXISTS 'bacchus_user'@'localhost';
 CREATE USER 'bacchus_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ILoveWine!';
 
 -- grant all privileges to the movies database to user movies_user on localhost 
-GRANT ALL PRIVILEGES ON bacchus.* TO 'bacchus_user'@'localhost';
+GRANT ALL PRIVILEGES ON bacchus_db.* TO 'bacchus_user'@'localhost';
 
 
 -- drop tables if they are present
